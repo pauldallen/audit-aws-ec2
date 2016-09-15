@@ -187,17 +187,6 @@ coreo_aws_advisor_ec2 "advise-ec2" do
   action :advise
   alerts ${AUDIT_AWS_EC2_ALERT_LIST}
   regions ${AUDIT_AWS_EC2_REGIONS}
-  ignore([
-             {
-                 :name => "pallen-billing",
-                 :level => ["warning"],
-                 :warnings => [
-                     "logging-disabled"
-                 ]
-             }, {
-                 :name => "cloudcoreo-yum"
-             }
-         ])
 end
 
 coreo_uni_util_notify "advise-ec2" do
