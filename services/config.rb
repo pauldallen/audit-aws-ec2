@@ -4,7 +4,9 @@
 coreo_aws_advisor_alert "ec2-ip-address-whitelisted" do
   action :define
   service :ec2
-  description "Specific IP address added to Security Group"
+  link "http://kb.cloudcoreo.com/mydoc_ec2-ip-address-whitelisted.html"
+  display_name "Security Group contains IP address"
+  description "Security Group contains IP address"
   category "Security"
   suggested_action "Review Security Group to ensure that the host ip address added is to allowed access."
   level "Warning"
@@ -17,6 +19,8 @@ end
 coreo_aws_advisor_alert "ec2-unrestricted-traffic" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-unrestricted-traffic.html"
+  display_name "Security group allows unrestricted traffic"
   description "All IP addresses are allowed to access resources in a specific security group."
   category "Security"
   suggested_action "Restrict access to the minimum specific set of IP address or ports necessary."
@@ -30,6 +34,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-1521-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 1521"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -43,6 +49,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-3306-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 3306"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -56,6 +64,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-5432-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 5432"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -69,6 +79,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-27017-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 27017"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -82,6 +94,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-1433-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 1433"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -95,6 +109,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-3389-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 3389"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -108,6 +124,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-22-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 22"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -121,6 +139,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-5439-0.0.0.0/0" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 5439"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -134,6 +154,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-23" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 23"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -147,6 +169,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-21" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 21"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -160,6 +184,8 @@ end
 coreo_aws_advisor_alert "ec2-TCP-20" do
   action :define
   service :ec2
+  link "http://kb.cloudcoreo.com/mydoc_ec2-tcpportopen.html"
+  display_name "TCP port is open - 20"
   description "Important TCP port is open and/or open to the world."
   category "Security"
   suggested_action "Only open those ports that must be open for your service to operate. Consider deleting or modifying the affected security group."
@@ -173,7 +199,9 @@ end
 coreo_aws_advisor_alert "ec2-ports-range" do
   action :define
   service :ec2
-  description "Security group specifies a port range rather than individual ports."
+  link "http://kb.cloudcoreo.com/mydoc_ec2-ports-range.html"
+  display_name "Security group contains a port range"
+  description "Security group contains a port range rather than individual ports."
   category "Security"
   suggested_action "Only add rules to your Security group that specify individual ports and don't use port ranges unless they are required."
   level "Warning"
