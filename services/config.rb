@@ -214,7 +214,7 @@ coreo_uni_util_notify "advise-ec2" do
   "number_of_violations":"STACK::coreo_aws_advisor_ec2.advise-ec2.number_violations",
   "number_violations_ignored":"STACK::coreo_aws_advisor_ec2.advise-ec2.number_ignored_violations",
   "violations": STACK::coreo_aws_advisor_ec2.advise-ec2.report }'
-  payload_type "${AUDIT_AWS_EC2_PAYLOAD_TYPE}"
+  payload_type "json"
   endpoint ({
       :to => '${AUDIT_AWS_EC2_ALERT_RECIPIENT}', :subject => 'CloudCoreo ec2 advisor alerts on INSTANCE::stack_name :: INSTANCE::name'
   })
