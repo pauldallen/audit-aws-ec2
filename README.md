@@ -47,6 +47,10 @@ This repo is designed to work with CloudCoreo. It will monitor EC2 against best 
 1. Alert
 1. EC2
 
+## Categories
+
+1. Audit
+
 ## Diagram
 
 
