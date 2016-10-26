@@ -208,7 +208,7 @@ coreo_aws_advisor_alert "ec2-ports-range" do
   objectives ["security_groups"]
   audit_objects ["security_group_info.ip_permissions.from_port"]
   operators ["!="]
-  alert_when ["object[:to_port]"]
+  alert_when [10]
 end
 
 coreo_aws_advisor_ec2 "advise-ec2" do
